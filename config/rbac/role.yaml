@@ -28,4 +28,56 @@ rules:
   verbs:
   - create
 
+##
+## Rules for ms.dbgjerez.es/v1alpha1, Kind: Microservice
+##
+- apiGroups:
+  - ms.dbgjerez.es
+  resources:
+  - microservices
+  - microservices/status
+  - microservices/finalizers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - services
+  - services/finalizers
+  - endpoints
+  - persistentvolumeclaims
+  - events
+  - configmaps
+  - secrets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - statefulsets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+
 #+kubebuilder:scaffold:rules

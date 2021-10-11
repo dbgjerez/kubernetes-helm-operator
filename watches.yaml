@@ -1,6 +1,0 @@
-# Use the 'create api' subcommand to add watches to this file.
-- group: dbgjerez.es
-  version: v1alpha1
-  kind: Microservice
-  chart: helm-charts/microservice
-#+kubebuilder:scaffold:watch

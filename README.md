@@ -1,1 +1,0 @@
-# Kubernetes operator with Helm
